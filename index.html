@@ -72,6 +72,11 @@
     text-decoration: underline;
   }
 
+  .lesson-code,
+  .lesson-title {
+  display: inline;
+}
+
   /* 📱 Mobile-specific adjustments */
   @media (max-width: 600px) {
     body {
@@ -103,16 +108,45 @@
    ul li::before {
     display: none;        /* hide bullet on phone */
     }
+    
+  ul li a {
+    display: grid;
+    grid-template-columns: 4.5rem 1fr; /* left = codes, right = text */
+    column-gap: 0.75rem;
+    align-items: start;
+    text-align: left;
+  }
+
+  .lesson-code {
+    font-weight: bold;
+    text-align: right;
+    white-space: nowrap;
+  }
+
+  .lesson-title {
+    text-align: left;
+  }
 }
 </style>
+
+ 
 
 
   <h1>Mecanică (clasa a 11-a)</h1>
 
   <h2>Oscilații mecanice</h2>
   <ul>
-    <li><a href="L1.1-Oscilatorul-liniar-armonic-fara-frecare.pdf" target="_blank">Lectia 1.1 Oscilatorul liniar armonic fără frecare</a></li>
-    <li><a href="L1.2-Oscilatorul-liber-cu-frecare.pdf" target="_blank">Lectia 1.2 Oscilatorul liber cu frecare. Oscilatii amortizate</a></li>
+    <li>
+  <a href="L1.1-Oscilatorul-liniar-armonic-fara-frecare.pdf" target="_blank">
+    <span class="lesson-code">L1.1</span>
+    <span class="lesson-title">Oscilatorul liniar armonic fără frecare</span>
+  </a>
+</li>
+  <a href="L1.2-Oscilatorul-liber-cu-frecare.pdf" target="_blank">
+    <span class="lesson-code">L1.2</span>
+    <span class="lesson-title">Oscilatorul liber cu frecare. Oscilatii amortizate<</span>
+  </a>
+</li>
     <li><a href=NULL target="_blank">Lectia 1.3 Oscilatori cuplați. Rezonanța</a></li>
     <li><a href=NULL target="_blank">Lectia 1.4 Compunerea oscilațiilor</a></li>
     <li><a href=NULL target="_blank">Lectia 1.5 Pendulul gravitațional</a></li>
