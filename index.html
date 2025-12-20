@@ -15,8 +15,32 @@
     padding: 0 16px;
     background: #f9f9f9;
     color: #333;
-  }
 
+        /* Background image */
+  background-image: url("laborator.png");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  color: #2b2b2b;
+  }
+    
+.content-panel {
+  max-width: 760px;
+  margin: 0 auto;
+
+  background: rgba(230, 230, 230, 0.85);;
+  backdrop-filter: blur(2px);
+
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+    
   h1 {
     font-size: 2.2rem;
     margin-bottom: 1rem;
@@ -82,11 +106,20 @@
     body {
       font-size: 15px;
       padding: 0 14px;
+    background-image: url("laborator-mobile.png");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed; 
     }
 
     h1 {
-      font-size: 1.9rem;
+      font-size: 1.7rem;
     }
+
+    .content-panel {
+  background: rgba(230, 233, 230, 0.88);
+ }
     
     .underline {
        margin-bottom: 1.2rem
@@ -145,7 +178,7 @@
 
  
 
-
+<div class="content-panel">
   <h1>Mecanică (clasa a 11-a)</h1>
 
   <h2>Oscilații mecanice</h2>
@@ -263,6 +296,6 @@
       </li>
 
   </ul>
-
+ </div>
 </body>
 </html>
